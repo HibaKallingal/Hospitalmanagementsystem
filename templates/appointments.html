@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management - Appointments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .appointment-card {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .appointment-card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .appointment-card-content {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .appointment-card {
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+
+            .appointment-card-title {
+                font-size: 20px;
+            }
+
+            .appointment-card-content {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Hospital Management</h1>
+    </header>
+
+    <div class="container">
+        <h2>Appointments</h2>
+
+        <div class="appointment-card">
+            <h3 class="appointment-card-title">John</h3>
+            <img src="{{ url_for('static', filename='resized_male icon.png') }}">
+            <p class="appointment-card-content">Date: 2023-05-23</p>
+            <p class="appointment-card-content">Time: 09:00 AM</p>
+            <p class="appointment-card-content">Doctor: Dr. Smith</p>
+        </div>
+
+        <div class="appointment-card">
+            <h3 class="appointment-card-title">Jane</h3>
+            <img src="{{ url_for('static', filename='resized_female icon.png') }}">
+            <p class="appointment-card-content">Date: 2023-05-20</p>
+            <p class="appointment-card-content">Time: 11:30 AM</p>
+            <p class="appointment-card-content">Doctor: Dr. Johnson</p>
+        </div>
+
+        <div class="appointment-card">
+            <h3 class="appointment-card-title">Alex</h3>
+            <img src="{{ url_for('static', filename='resized_male icon.png') }}">
+            <p class="appointment-card-content">Date: 2023-05-19</p>
+            <p class="appointment-card-content">Time: 01:30 PM</p>
+            <p class="appointment-card-content">Doctor: Dr. James</p>
+        </div>
+        <!-- Add more appointment cards here -->
+
+    </div>
+</body>
+</html>

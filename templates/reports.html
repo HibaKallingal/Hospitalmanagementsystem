@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management - Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .report-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .report-item {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .report-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .report-item p {
+            font-size: 16px;
+        }
+
+        .health-condition {
+            margin-top: 10px;
+        }
+
+        .health-condition p {
+            font-weight: bold;
+        }
+
+        .health-condition .condition-item {
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .report-item {
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+
+            .report-item h3 {
+                font-size: 18px;
+            }
+
+            .report-item p {
+                font-size: 14px;
+            }
+
+            .health-condition .condition-item {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Hospital Management - Reports</h1>
+    </header>
+
+    <div class="container">
+        <h2>Recent Reports</h2>
+
+        <ul class="report-list">
+            
+            <li class="report-item">
+                <h3>Report 1</h3>
+                <p>Patient: Jane</p>
+                <img src="{{ url_for('static', filename='resized_female icon.png') }}">
+                <p>Date: 2023-05-20</p>
+                <p>Doctor: Dr. Johnson</p>
+
+                <div class="health-condition">
+                    <p>Health Condition:</p>
+                    <ul>
+                        <li class="condition-item">Blood Pressure: 130/85 mmHg</li>
+                        <li class="condition-item">Heart Rate: 68 bpm</li>
+                        <li class="condition-item">Temperature: 99.2°F</li>
+                        <!-- Add more health condition items here -->
+                    </ul>
+                </div>
+            </li>
+
+            <li class="report-item">
+                <h3>Report 2</h3>
+                <p>Patient: Alex</p>
+                <img src="{{ url_for('static', filename='resized_male icon.png') }}">
+                <p>Date: 2023-05-19</p>
+                <p>Doctor: Dr. John</p>
+                <div class="health-condition">
+                    <p>Health Condition:</p>
+                    <ul>
+                        <li class="condition-item">Blood Pressure: 135/85 mmHg</li>
+                        <li class="condition-item">Heart Rate: 70 bpm</li>
+                        <li class="condition-item">Temperature: 97.2°F</li>
+                        <!-- Add more health condition items here -->
+                    </ul>
+                </div>
+            </li>
+
+            <li class="report-item">
+                <h3>Report 3</h3>
+                <p>Patient: Emma</p>
+                <img src="{{ url_for('static', filename='resized_female icon.png') }}">
+                <p>Date: 2023-05-18</p>
+                <p>Doctor: Dr. Abigail</p>
+
+                <div class="health-condition">
+                    <p>Health Condition:</p>
+                    <ul>
+                        <li class="condition-item">Blood Pressure: 120/80 mmHg</li>
+                        <li class="condition-item">Heart Rate: 75 bpm</li>
+                        <li class="condition-item">Temperature: 98.6°F</li>
+                        <!-- Add more health condition items here -->
+                    </ul>
+                </div>
+            </li>
+            <!-- Add more report items here -->
+
+        </ul>
+    </div>
+</body>
+</html>

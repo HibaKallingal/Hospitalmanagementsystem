@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #19497b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .welcome-text {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-content {
+            font-size: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .card {
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+
+            .card-title {
+                font-size: 20px;
+            }
+
+            .card-content {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Hospital Management</h1>
+    </header>
+    <img src="{{ url_for('static', filename='resized_hospital.jpg') }}">
+
+    <div class="container">
+        
+        <div class="welcome-text">
+            <h2>Welcome to our Hospital Management System</h2>
+            <p>Manage patients, appointments, and reports efficiently.</p>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Doctors</h3>
+            <img src="{{ url_for('static', filename='resized_Doctors.jpg') }}">
+            <p class="card-content">Information of doctors.</p>
+            <a href="/doctors">View Doctors</a>
+        </div>
+        
+        <div class="card">
+            <h3 class="card-title">Appointments</h3>
+            <img src="{{ url_for('static', filename='resized_appointments.jpg') }}">
+            <p class="card-content">Manage and schedule appointments for patients with doctors.</p>
+            <a href="/appointments">View Appointments</a>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Patients</h3>
+            <img src="{{ url_for('static', filename='resized_patient icon.png') }}">
+            <p class="card-content">Access and manage information of patient.</p>
+            <a href="/patients">View Patients</a>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Reports</h3>
+            <img src="{{ url_for('static', filename='resized_report.png') }}">
+            <p class="card-content">Access and manage medical reports for patients.</p>
+            <a href="/reports">View Reports</a>
+        </div>
+
+    </div>
+</body>
+</html>

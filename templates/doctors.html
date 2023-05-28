@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management - Doctors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .doctor-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .doctor-item {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .doctor-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .doctor-item p {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .doctor-item {
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+
+            .doctor-item h3 {
+                font-size: 18px;
+            }
+
+            .doctor-item p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Hospital Management - Doctors</h1>
+    </header>
+
+    <div class="container">
+        <h2>Doctors List</h2>
+
+        <ul class="doctor-list">
+            <li class="doctor-item">
+                <h3>Doctor 1</h3>
+                <img src="{{ url_for('static', filename='resized_male doctor.png') }}">
+                <p>Name: Dr. John</p>
+                <p>Specialty: Cardiology</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: john.doe@gmail.com</p>
+                <!-- Add more doctor details here -->
+            </li>
+
+            <li class="doctor-item">
+                <h3>Doctor 2</h3>
+                <img src="{{ url_for('static', filename='resized_female doctor.png') }}">
+                <p>Name: Dr. Jane</p>
+                <p>Specialty: Pediatrics</p>
+                <p>Phone: 987-654-3210</p>
+                <p>Email: jane.smith@gmail.com</p>
+                <!-- Add more doctor details here -->
+            </li>
+
+            <li class="doctor-item">
+                <h3>Doctor 3</h3>
+                <img src="{{ url_for('static', filename='resized_male doctor.png') }}">
+                <p>Name: Dr. Johnson</p>
+                <p>Specialty: Neurology</p>
+                <p>Phone: 879-123-2758</p>
+                <p>Email: jhonson.davis@gmail.com</p>
+                <!-- Add more doctor details here -->
+            </li>
+
+            <li class="doctor-item">
+                <h3>Doctor 4</h3>
+                <img src="{{ url_for('static', filename='resized_male doctor.png') }}">
+                <p>Name: Dr. Smith</p>
+                <p>Specialty: General surgery</p>
+                <p>Phone: 567-244-9567</p>
+                <p>Email: smith.cooper@gmail.com</p>
+                <!-- Add more doctor details here -->
+            </li>
+
+            <li class="doctor-item">
+                <h3>Doctor 5</h3>
+                <img src="{{ url_for('static', filename='resized_female doctor.png') }}">
+                <p>Name: Dr. Abigail</p>
+                <p>Specialty: Dermatology</p>
+                <p>Phone: 254-879-1654</p>
+                <p>Email: abigail.harper@gmail.com</p>
+                <!-- Add more doctor details here -->
+            </li>
+            <!-- Add more doctor items here -->
+
+        </ul>
+    </div>
+</body>
+</html>
